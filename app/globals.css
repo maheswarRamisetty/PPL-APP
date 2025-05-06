@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+
+.filter-section {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 160px;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-option {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #f9f9f9;
+}
+
+.dropdown-selected {
+  background-color: #f0f0f0;
+}
+
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footerSection {
+  flex: 1;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.emailInput {
+  width: 270px;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+}
+
+.subscribeBtn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.newsletterForm {
+  display: flex;
+  margin-top: 20px;
+}
+
+.contactInfo {
+  margin-top: 20px;
+}
+
+.contactInfo p {
+  margin-bottom: 10px;
+}
+
+.currencySelector {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.currencySelector img {
+  margin-right: 10px;
+}
+
+.currencyNote {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.footerDivider {
+  height: 1px;
+  background-color: #333;
+  margin: 30px 0;
+}
+
+.footerMain {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footerLogo {
+  flex: 1;
+}
+
+.footerLinks {
+  flex: 1;
+}
+
+.footerLogo h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.footerNav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerNav li {
+  margin-bottom: 15px;
+}
+
+.footerNav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.socialIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.paymentIcon {
+  width: 40px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopifyPay {
+  background-color: #5a31f4;
+}
+
+.americanExpress {
+  background-color: #1f72cd;
+}
+
+.applePay {
+  background-color: #000;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+  margin-top: 20px;
+}
